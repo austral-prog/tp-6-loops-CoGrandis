@@ -26,7 +26,6 @@ def sum_of_powers(base, max_exp):
     for x in range(max_exp):
         power = power * base
         suma += power
-        print(suma)
 
     return suma
 

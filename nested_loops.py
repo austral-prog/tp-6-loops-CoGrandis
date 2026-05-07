@@ -41,14 +41,11 @@ def col_sums(matrix):
     """
     list_col_sums = []
 
-    for x in range(len(matrix)+1):
+    for x in range(len(matrix[0])):   # columnas
         suma_actual = 0
-        for y in range(len(matrix)):
+        for y in range(len(matrix)):  # filas
             suma_actual += matrix[y][x]
         list_col_sums.append(suma_actual)
-        
+
     return list_col_sums
             
-
-matrix =   [[1, 2, 3], [4, 5, 6]]
-print(col_sums(matrix))
